@@ -1,42 +1,82 @@
-{
-"plans": [
-{
-"id": "plan_abc123",
-"title": "Finish math project",
-"description": "Build simulations",
-"owner": "aditya",
-"status": "active", // active / on-hold / done
-"priority": "high",
-"createdAt": "2025-11-09T08:00:00.000Z",
-"updatedAt": "2025-11-09T09:00:00.000Z",
-"relatedGoals": ["goal_xyz"]
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Study Management Assistant — Preview</title>
+<style>
+:root{
+--bg:#0f1724; /* deep navy */
+--card:#0b1220;
+--muted:#94a3b8;
+--accent:#60a5fa; /* sky blue */
+--accent-2:#7c3aed; /* violet */
+--glass: rgba(255,255,255,0.03);
+--radius:12px;
+--maxw:1000px;
+font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
-],
-"goals": [
-{
-"id": "goal_xyz",
-"title": "Get top 5% in exams",
-"description": "Study schedule + practice tests",
-"targetDate": "2026-05-01",
-"metrics": {"score": 90}
+html,body{height:100%;margin:0;background:linear-gradient(180deg,#071025 0%, #081228 40%, #051021 100%);color:#e6eef8}
+.wrap{max-width:var(--maxw);margin:36px auto;padding:28px;border-radius:16px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));box-shadow:0 8px 40px rgba(2,6,23,0.6);backdrop-filter: blur(6px)}
+header{display:flex;gap:18px;align-items:center;margin-bottom:14px}
+.logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;font-weight:700;color:white;font-size:22px;box-shadow:0 6px 20px rgba(92,76,255,0.15)}
+h1{margin:0;font-size:20px}
+p.lead{margin:6px 0 20px;color:var(--muted)}
+
+
+.main{display:grid;grid-template-columns:280px 1fr;gap:20px}
+nav{position:sticky;top:28px;padding:18px;background:var(--glass);border-radius:12px;height:fit-content}
+nav h3{margin:0 0 12px 0;font-size:13px;color:var(--muted)}
+nav a{display:block;padding:8px 10px;margin:6px 0;border-radius:8px;color:var(--accent);text-decoration:none;font-size:14px}
+nav a:hover{background:rgba(96,165,250,0.06)}
+
+
+article{padding:18px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border-radius:12px}
+section{margin-bottom:18px}
+section h2{margin:0 0 8px 0;font-size:16px;color:#dbeafe}
+section p, section li{color: #cfe6ff}
+.muted{color:var(--muted);font-size:13px}
+
+
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005));padding:14px;border-radius:10px;margin-top:10px}
+ul{margin:8px 0 0 18px}
+code{background:rgba(255,255,255,0.03);padding:2px 6px;border-radius:6px;font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace}
+
+
+/* collapsible */
+.collapsible{border-radius:10px;overflow:hidden}
+.collapsible summary{cursor:pointer;padding:10px 12px;background:rgba(255,255,255,0.02);list-style:none;font-weight:600}
+.collapsible[open] summary{background:linear-gradient(90deg, rgba(96,165,250,0.06), rgba(124,58,237,0.03))}
+.collapsible div{padding:12px 12px 18px;border-top:1px solid rgba(255,255,255,0.02)}
+
+
+footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+
+
+/* responsive */
+@media (max-width:820px){
+.main{grid-template-columns:1fr;}
+nav{position:relative}
 }
-],
-"dailyTasks": [
-{
-"id": "task_01",
-"date": "2025-11-09",
-"title": "Revise calculus",
-"durationMinutes": 45,
-"completed": false
-}
-],
-"progressReports": [
-{
-"id": "pr_1",
-"date": "2025-11-09",
-"summary": "Completed 2 practice tests, average 78%",
-"linkedTasks": ["task_01"],
-"notes": "Need more timed practice"
-}
-]
-}
+
+
+/* print */
+@media print{body{background:white;color:black} .wrap{box-shadow:none;border-radius:0;padding:8mm}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="logo">KB</div>
+<div>
+<h1>Study Management Assistant — Bot Personality & Behavior</h1>
+<p class="lead">A readable preview of your bot's guidelines, behavior, and usage flow. Use this as an internal docs page or print-friendly handout.</p>
+</div>
+</header>
+
+
+<div class="main">
+<nav>
+<h3>Contents</h3>
+<a href="#overview">Overview</a>
+</html>

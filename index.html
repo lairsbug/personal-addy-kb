@@ -77,6 +77,50 @@ nav{position:relative}
 
 <div class="main">
 <nav>
-<h3>Contents</h3>
-<a href="#overview">Overview</a>
+<h3>Contents</h3>{
+"plans": [
+{
+"id": "plan_abc123",
+"title": "Finish math project",
+"description": "Build simulations",
+"owner": "aditya",
+"status": "active", // active / on-hold / done
+"priority": "high",
+"createdAt": "2025-11-09T08:00:00.000Z",
+"updatedAt": "2025-11-09T09:00:00.000Z",
+"relatedGoals": ["goal_xyz"]
+}
+],
+"goals": [
+{
+"id": "goal_xyz",
+"title": "Get top 5% in exams",
+"description": "Study schedule + practice tests",
+"targetDate": "2026-05-01",
+"metrics": {"score": 90}
+}
+],
+"dailyTasks": [
+{
+"id": "task_01",
+"date": "2025-11-09",
+"title": "Revise calculus",
+"durationMinutes": 45,
+"completed": false
+}
+],
+"progressReports": [
+{
+"id": "pr_1",
+"date": "2025-11-09",
+"summary": "Completed 2 practice tests, average 78%",
+"linkedTasks": ["task_01"],
+"notes": "Need more timed practice"
+}
+]
+}
+</nav>
+</div>
+</div>
+</body>
 </html>
